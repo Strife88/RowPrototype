@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+}
+
+.page {
+    width:600px;
+    background:lightgrey;
+    height:600px;
+    display: grid;
+    grid-template-columns: 200px 400px;
+}
+.side-menu {
+    background: lightgrey;
+}
+.mainContent {
+    background: white;
+}
+.row {
+    background: url(../images/Card-Normal-1.png);
+    height: 72px;
+}
+.row-active {
+    background: url(../images/Card-Expanded-1.png);
+    height: 184px;
+}
+.row + .row {
+    margin-top: 16px;
+}
