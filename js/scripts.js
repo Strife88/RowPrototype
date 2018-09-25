@@ -40,8 +40,15 @@ for (var i = 0; i < btns.length; i++) {
 btns[i].addEventListener("click", function() {
   this.classList.toggle("active");
     if(this.classList == "row active"){
-    this.style.background = "url('../RowPrototype/images/Card-Expanded-"+ i +".png')";
+    this.style.background = "url('../RowPrototype/images/Card-Expanded-"+ this.getAttribute("id").slice(-1) +".png')";
+    }
+    else {
+    this.style.background = "url('../RowPrototype/images/Card-Normal-"+ this.getAttribute("id").slice(-1) +".png')";    
 }
-});
+}
+);
 
 };
+
+
+//need to fallback to previous image. 
