@@ -16,11 +16,15 @@
     background: white;
 }
 .row {
-    background: url(../images/Card-Normal-1.png);
+/*    background: url(../images/Card-Normal-1.png);*/
     height: 72px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
-.row-active {
-    background: url(../images/Card-Expanded-1.png);
+.row:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.active {
+    background: red;
     height: 184px;
 }
 .row + .row {
