@@ -16,10 +16,15 @@ var createTag = function(tag,classname,parent,id,text) {
  if(id){  
  element.setAttribute("id", id);     
  }
+
+
  var container = document.getElementsByClassName(parent);
- for(i=0;i< container.length;i++) {
+ container[0].appendChild(element)
+    
+/*    for(i=0;i< container.length;i++) {
  container[i].appendChild(element);
  }
+ */
 };
 
 
