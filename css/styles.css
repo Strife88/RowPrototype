@@ -37,6 +37,8 @@ body {
     border-radius: 6px;
     box-sizing: border-box;
 }
+
+
 .side-menu {
     background: url(../orderListImage/aside-1024.png) no-repeat;
 }
@@ -75,4 +77,29 @@ body {
     height: 24px;
     margin-bottom:8px;
     margin-top: 40px;
+}
+
+@media (min-width: 1366px) {
+    .header {
+    background: url(../orderListImage/Header-1366.png) 50% 0% no-repeat white;
+}
+    .page {
+    width:1220px;
+    min-height: 600px;
+    grid-template-columns: 281px 867px;
+    column-gap: 24px;
+    padding: 24px;
+}
+}
+@media (min-width: 1920px) {
+    .header {
+    background: url(../orderListImage/Header-1920.png) 50% 0% no-repeat white;
+}
+    .page {
+    width:1512px;
+    min-height: 600px;
+    grid-template-columns: 222px 1215px;
+    column-gap: 24px;
+    padding: 24px;
+}
 }
