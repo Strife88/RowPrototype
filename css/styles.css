@@ -65,7 +65,7 @@ body {
     height: 457px;
 }
 .row + .row {
-    margin-top: 6px;
+    margin-top: 8px;
 }
 .days{
     background: url(../orderListImage/10Days.png) no-repeat;
@@ -78,7 +78,9 @@ body {
     margin-bottom:8px;
     margin-top: 40px;
 }
-
+.appBanner {
+    display:none;
+}
 @media (min-width: 1366px) {
     .header {
     background: url(../orderListImage/Header-1366.png) 50% 0% no-repeat white;
@@ -90,16 +92,46 @@ body {
     column-gap: 24px;
     padding: 24px;
 }
+    .side-menu {
+    background: url(../orderListImage/aside-1366.png) no-repeat;
+}
+    .column-menu {
+    background: url(../orderListImage/ActionBar-1366.png) no-repeat;
+    height: 54px;
+    margin-bottom: 24px;
+}
+    .active {
+    height: 417px;
+}
 }
 @media (min-width: 1920px) {
+    
     .header {
     background: url(../orderListImage/Header-1920.png) 50% 0% no-repeat white;
 }
+    .grid {
+    display: grid;
+    grid-template-columns: 1512px 288px;
+    column-gap: 18px;   
+    }
     .page {
     width:1512px;
     min-height: 600px;
     grid-template-columns: 222px 1215px;
     column-gap: 24px;
     padding: 24px;
+}
+    .side-menu {
+    background: url(../orderListImage/aside-1920.png) no-repeat;
+}
+    .column-menu {
+    background: url(../orderListImage/ActionBar-1920.png) no-repeat;
+    height: 54px;
+    margin-bottom: 24px;
+}
+    .appBanner {
+    display: block;
+    background: url(../orderListImage/AppBanner288x833.png) no-repeat;
+    
 }
 }
