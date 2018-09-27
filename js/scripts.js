@@ -25,7 +25,7 @@ for(i=1;i<9;i++){
     createTag('div','row','column','row-'+i);
     var currentSelector = document.getElementById("row-"+i);
 //addImage based on iterator
-    currentSelector.style.background = "url('../images/Card-"+imageRes+"-Normal-"+ i +".png')";
+    currentSelector.style.background = "url('../RowPrototype/images/Card-"+imageRes+"-Normal-"+ i +".png')";
 }
 }
 
@@ -39,10 +39,10 @@ for (var i = 0; i < btns.length; i++) {
 btns[i].addEventListener("click", function() {
   this.classList.toggle("active");
     if(this.classList == "row active"){
-    this.style.background = "url('../images/Card-"+imageRes+"-Expanded-"+ this.getAttribute("id").slice(-1) +".png')";
+    this.style.background = "url('../RowPrototype/images/Card-"+imageRes+"-Expanded-"+ this.getAttribute("id").slice(-1) +".png')";
     }
     else {
-    this.style.background = "url('../images/Card-"+imageRes+"-Normal-"+ this.getAttribute("id").slice(-1) +".png')";    
+    this.style.background = "url('../RowPrototype/images/Card-"+imageRes+"-Normal-"+ this.getAttribute("id").slice(-1) +".png')";    
 }
 }
 )
